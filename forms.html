@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form </title>
+     <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="css/questionaireCss.css">
+  <!-- js/jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="header-container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand">CSE Quizzer</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Examination
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="prof-level-coverage.html">Professsional Level</a>
+                  <a class="dropdown-item" href="#">Sub-Professsional Level</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviewer.html">Reviewers</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    <main class="forms-container">
+        <form action="prof-level.html" autocomplete="off" name="csc-sheet" method="POST" >
+            <p id="forms-header"> Only fill up this survey form if you wish to participate in our study. If not, please proceed to the Examination Page.
+            </p>
+            <hr style="margin-top: 10px;">
+            <div id="forms"> 
+            <p>Email Address:</p>
+            <input type="email" placeholder="Email Address" id="form" name="Email">
+            <p>Age:</p>
+            <input type="number" placeholder="Age" id="form" name="Age" required>
+            <p>Occupation:</p>
+            <input type="text" placeholder="Occupation" id="form" name="Occupation" required>
+            <p>Reason On Taking The Examination:</p>
+            <input type="text" placeholder="Reason" id="form" name="Reason">
+            <button type="submit">Submit Response</button>
+            </div>
+        </form>
+        <hr style="margin-top: 10px;">
+       <a href="prof-level.html">
+        <button type="submit">Proceed to the Examination
+        </button>
+       </a>
+        </main>
+        <section id="footer-container">
+            <h2>Help</h2>
+            <div class="footer-links">
+              <a href="about.html">About Us</a>
+              <a href="contacts.html">Contacts</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+            <p>Copyright © lorem ipsum</p>
+          </section>
+</body>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyWYzERaBXxZRzrISIgWbYbQL6ZT4JhoYKQa-Ge-0ZmWhdzqOk/exec'
+    const form = document.forms['csc-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thank you for submitting a response."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
