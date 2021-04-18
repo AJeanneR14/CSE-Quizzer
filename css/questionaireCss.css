@@ -100,7 +100,7 @@ a{
 .help-container{
   background-color: #f7f3e9;
   color: #050505;
-  padding: 1em 1.5em;
+  padding: 1.5em 1.5em;
 }
 
 /* About Us */
@@ -242,7 +242,7 @@ h2, h3{
   color: #fff;
   border: 1px solid #111;
   border-radius: 30px;
-  margin: 2em 1em 1em;
+  margin: 2em 1em 1.5em;
 }
 
 #btnOp:hover{
