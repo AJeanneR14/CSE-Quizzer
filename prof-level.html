@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CSE Quizzer </title>
+    <title> CSE Professional Level Quizzer </title>
     <!-- <link rel="stylesheet" href="style.css"> -->
 
 
@@ -35,12 +35,12 @@
                 <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Examination
-                </a>
+                </span>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="prof-level-coverage.html">Professsional Level</a>
-                  <a class="dropdown-item" href="#">Sub-Professsional Level</a>
+                  <a class="dropdown-item" href="maintenance-page.html">Sub-Professsional Level</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -58,13 +58,20 @@
             <hr style="margin-top: 20px;">
 
             <p id="question"></p>
- 
+          <div class="buttons-container">
             <div class="buttons">
                 <button id="btn0"><span id="choice0"></span></button>
+            </div>
+            <div class="buttons">
                 <button id="btn1"><span id="choice1"></span></button>
+            </div>
+            <div class="buttons">
                 <button id="btn2"><span id="choice2"></span></button>
+            </div>
+            <div class="buttons">
                 <button id="btn3"><span id="choice3"></span></button>
             </div>
+          </div>
             <hr style="margin-top: 50px;">
             <div id="op-container">
                 <p id="progress">Question x of y.</p>
@@ -88,14 +95,18 @@
 <script src="js/main.js"></script>
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyWYzERaBXxZRzrISIgWbYbQL6ZT4JhoYKQa-Ge-0ZmWhdzqOk/exec'
-    const form = document.forms['csc-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response)
-        .catch(error => console.error('Error!', error.message))
-    })
+   var redirect = document.getElementsByTagName('a');
+
+for (var i = 0, len = redirect.length; i < len; i++) {
+  redirect[i].onclick = function() {
+        var check = confirm("Are you sure you want to leave?");
+        if (check == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+}
   </script>
 </html>

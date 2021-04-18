@@ -1,0 +1,15 @@
+/* 404 Page Not Found Code */
+ErrorDocument 404 /404-Page.html
+
+/* Removing Extension File 
+# mod_rewrite starts here
+RewriteEngine on
+
+# does not apply to exisiting directories, meaning that if the folder exists on the server then don't change anything and don't run the Rule!
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+# Check for file in directory with .html Extension
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Here we show the page that has the .html Extension
+RewriteRule ^(.*)$ $1.html [NC,L]
