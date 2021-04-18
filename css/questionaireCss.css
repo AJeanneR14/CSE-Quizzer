@@ -392,6 +392,54 @@ h2, h3{
 
 }
 
+@media (min-width:768px)  { 
+
+  #error-404-container{
+    font-size: 3.2rem;
+    padding: 7rem;
+  }
+
+  #main-container{
+    padding: 2.5em 0 3em;
+  }
+  
+  .main-text{
+    padding: 2.5em 2.5em 0;
+  }
+
+  .help-container{
+    padding: 2em 6em;
+  }
+
+  .about-container {
+    font-size: 2rem;
+    line-height: 1.8em;
+  }
+
+  .contacts-container {
+    font-size: 2.8rem;
+    line-height: 2em;
+    padding: 1.5em 0;
+  }
+
+  .faq-container{
+    padding: 0.5em 2.5em;
+    font-size: 1.2rem;
+  }
+
+  #score{
+    font-size: 3rem;
+    padding-top: 2.5em;
+    padding-bottom: 2em;
+  }
+  #btnOp {
+    font-size: 2rem;
+    margin: 2em 1em 3em;
+  }
+  
+
+}
+
 @media (min-width:961px)  { 
 
   #error-404-container{
@@ -591,13 +639,13 @@ h2, h3{
     /* Help */
     
     .help-container{
-      padding: 3em 3.5em;
+      padding: 3em 4em;
     }
     
     /* About Us */
     .about-container {
-      font-size: 2rem;
-      line-height: 2em;
+      font-size: 2.2rem;
+      line-height: 2.5em;
     }
     
     /* Contacts */
