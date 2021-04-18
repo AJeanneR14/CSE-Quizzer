@@ -585,7 +585,7 @@ h2, h3{
 @media (min-width:1281px) {
 
   #error-404-container{
-    padding: 8rem 8rem 8rem;
+    padding: 9rem 8rem 9rem;
     line-height: 5rem;
   }
 
@@ -648,7 +648,7 @@ h2, h3{
     }
     #btnOp {
       padding: 1em;
-      margin: 4em 1em 6em;
+      margin: 3.5em 1em 5.5em;
     }
     
     /* Quiz Styling Ends Here */
