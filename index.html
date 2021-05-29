@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Home </title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-
 
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- css -->
-  <link rel="stylesheet" href="css/questionaireCss.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- js/jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Old+Standard+TT:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/d95bd1145d.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <section id="header-container">
-
+      <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand">CSE Quizzer</a>
+          <h2>CSE Quizzer</h2>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -49,13 +49,18 @@
             </ul>
           </div>
         </nav>
+      </div>
       </section>
       <section id="main-container">
-        <div class="banner-container">
-            <img src="Images/banner.jpg" alt="banner">
-        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 title-text">
+              <h1> The Quizzer that prepares you for the Civil Service Examination</h1>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6 col-md-12">
         <div class="main-text">
-          <h1> The Quizzer that prepares you for the Civil Service Examination</h1>
         <p>
           Try our quizzer and find out if it suits your liking. The quizzer will prepare you for the actual examination, and at the end of the quizzer, you will be provided with your score.
         </p>
@@ -68,15 +73,34 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="col-lg-6 col-md-12">
+        <img class="banner-img" src="Images/banner.jpg" alt="banner">
+  </div>
+    </div>
+    </div>
     </section>
     <section id="footer-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 CTA-section">
+            <h2>CSE Quizzer</h2>
+            <p>Copyright © CSE Quizzer 2021</p>
+          </div>
+          <div class="col-lg-3 col-md-3 help-section">
         <h2>Help</h2>
-        <div class="footer-links">
-          <a href="about.html">About Us</a>
-          <a href="contacts.html">Contacts</a>
-          <a href="faq.html">FAQ</a>
+          <a class="footer-links" href="about.html">About Us</a>
+          <a class="footer-links" href="faq.html">FAQ</a>
         </div>
-        <p>Copyright © lorem ipsum</p>
+        <div class="col-lg-3 col-md-3 contact-section">
+        <h2>Contacts</h2>
+        <a href="#"> <i class="fab fa-twitter footer-icon"></i> </a>
+        <a href="#"> <i class="fab fa-facebook-f footer-icon"></i> </a>
+        <a href="#"> <i class="fab fa-instagram footer-icon"></i> </a>
+        <a href="#"> <i class="fas fa-envelope footer-icon"></i> </a>
+      </div>
+      </div>
+      </div>
       </section>
 </body>
 </html>

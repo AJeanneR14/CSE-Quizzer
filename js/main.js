@@ -33,10 +33,10 @@ function showProgress(){
 }
 
 function showScores(){
-    var questionsOver = "<h2>Result</h2>";
-    var btnRetake = "<a href='prof-level.html'> <button  type='Submit' id='btnOp'> Retake </button>";
-    var btnReview = "<a href='reviewer.html'> <button  type='Submit' id='btnOp'> Review </button>";
-    questionsOver += "<h3 id='score'> Your score: " + quiz.score + "</h3>"
+    var questionsOver = "<h2 class='header score-header'>Result</h2>";
+    var btnRetake = "<a href='prof-level.html'> <button  type='Submit' class='btn btn-lg btn-info custom-btn' id='btnOp'> Retake </button>";
+    var btnReview = "<a href='reviewer.html'> <button  type='Submit' class='btn btn-lg btn-info custom-btn' id='btnOp'> Review </button>";
+    questionsOver += "<h3 class='header score-header' id='score'> Your score: " + quiz.score + "</h3>"
     + btnRetake + btnReview;
     var element = document.getElementById("quiz");
     element.innerHTML = questionsOver;

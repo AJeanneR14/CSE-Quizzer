@@ -5,92 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Reviewers </title>
-   <!-- <link rel="stylesheet" href="style.css"> -->
 
-
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- css -->
-  <link rel="stylesheet" href="css/questionaireCss.css">
-  <!-- js/jquery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <!-- bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <!-- css -->
+ <link rel="stylesheet" href="css/style.css">
+ <!-- js/jquery -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Old+Standard+TT:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+ <!-- Icons -->
+ <script src="https://kit.fontawesome.com/d95bd1145d.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <section id="header-container">
+   <section id="header-container">
+     <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-dark">
+         <h2>CSE Quizzer</h2>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+               <a class="nav-link active" href="index.html">Home</a>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Examination
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="prof-level-coverage.html">Professsional Level</a>
+                 <a class="dropdown-item" href="maintenance-page.html">Sub-Professsional Level</a>
+               </div>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="reviewer.html">Reviewers</a>
+             </li>
+           </ul>
+         </div>
+       </nav>
+     </div>
+     </section>
+    <section class="reviewer-container">
+        <div class="container-fluid">
+            <h2 class="header reviewer-header"> Reviewers Avaiable </h2>
 
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand">CSE Quizzer</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Examination
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="prof-level-coverage.html">Professsional Level</a>
-                  <a class="dropdown-item" href="maintenance-page.html">Sub-Professsional Level</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="reviewer.html">Reviewers</a>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+            <a href="Reviewer/1987-Philippine-Constitution.pdf"  target= _blank download="">
+               <img class="reviewer-img" src="Images/phil-cons.png" alt="reviewer img"> 
+            </a>
           </div>
-        </nav>
-      </section>
-    <main class="reviewer-container">
-        <div class="wrapper">
-            <h2 class="reviewer-links-h2"> Reviewers Avaiable </h2>
+            <div class="col-lg-4 col-md-4 col-4">
+            <a href="Reviewer/Actual Civil Service Exam (Set A).doc"  target= _blank download="">
+                <img class="reviewer-img" src="Images/CSE-reviewer.png" alt="reviewer img">
+            </a>
+          </div>
+            <div class="col-lg-4 col-md-4 col-4">
+            <a href="Reviewer/Civil Service Exam Reviewer part 1.pdf"  target= _blank download="">
+                <img class="reviewer-img" src="Images/CSE-reviewer.png" alt="reviewer img">
+            </a>
+          </div>
         </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-4">
+            <a href="Reviewer/Civil Service Exam Reviewer part 2.pdf"  target= _blank download="">
+                <img class="reviewer-img" src="Images/CSE-reviewer.png" alt="reviewer img">
+            </a>
+          </div>
+            <div class="col-lg-4 col-md-4 col-4">
+            <a href="Reviewer/Common_Grammar_Mistakes_English_PDF.pdf"  target= _blank download="">
+                <img class="reviewer-img" src="Images/Common_Grammar_Mistakes_English.png" alt="reviewer img">
+            </a>
+          </div>
 
-        <section class="reviewer-links">
-            <a href="Reviewer/1987-Philippine-Constitution.pdf" class="reviewer-img" target= _blank download="">
-                <img src="Images/phil-cons.png" alt="reviewer img">
+            <div class="col-lg-4 col-md-4 col-4">
+            <a href="Reviewer/CSE-English_Reviewer.pdf"  target= _blank download="">
+                <img class="reviewer-img" src="Images/English_Reviewer.png" alt="reviewer img">
             </a>
-            <a href="Reviewer/Actual Civil Service Exam (Set A).doc" class="reviewer-img" target= _blank download="">
-                <img src="Images/CSE-reviewer.png" alt="reviewer img">
+          </div>
+                  </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-4">
+            <a href="Reviewer/Ratio-Word-Problems.docx"  target= _blank download="">
+                <img class="reviewer-img" src="Images/Ratio-Word-Problems.png" alt="reviewer img">
             </a>
-            <a href="Reviewer/Civil Service Exam Reviewer part 1.pdf" class="reviewer-img" target= _blank download="">
-                <img src="Images/CSE-reviewer.png" alt="reviewer img">
+          </div>
+            <div class="col-lg-4 col-md-4 col-4">
+            <a href="Reviewer/The-Philippine-Constitution-60-items.docx"  target= _blank download="">
+                <img class="reviewer-img" src="Images/Philippine-Constitution-Problems.png" alt="reviewer img">
             </a>
-            <a href="Reviewer/Civil Service Exam Reviewer part 2.pdf" class="reviewer-img" target= _blank download="">
-                <img src="Images/CSE-reviewer.png" alt="reviewer img">
-            </a>
-            <a href="Reviewer/Common_Grammar_Mistakes_English_PDF.pdf" class="reviewer-img" target= _blank download="">
-                <img src="Images/Common_Grammar_Mistakes_English.png" alt="reviewer img">
-            </a>
-            <a href="Reviewer/CSE-English_Reviewer.pdf" class="reviewer-img" target= _blank download="">
-                <img src="Images/English_Reviewer.png" alt="reviewer img">
-            </a>
-            <a href="Reviewer/Ratio-Word-Problems.docx" class="reviewer-img" target= _blank download="">
-                <img src="Images/Ratio-Word-Problems.png" alt="reviewer img">
-            </a>
-            <a href="Reviewer/The-Philippine-Constitution-60-items.docx" class="reviewer-img" target= _blank download="">
-                <img src="Images/Philippine-Constitution-Problems.png" alt="reviewer img">
-            </a>
-            
+          </div>
+          </div>
+          </div>
+          </div>
         </section>
-        </main>
         <section id="footer-container">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 CTA-section">
+                <h2>CSE Quizzer</h2>
+                <p>Copyright © CSE Quizzer 2021</p>
+              </div>
+              <div class="col-lg-3 col-md-3 help-section">
             <h2>Help</h2>
-            <div class="footer-links">
-              <a href="about.html">About Us</a>
-              <a href="contacts.html">Contacts</a>
-              <a href="faq.html">FAQ</a>
+              <a class="footer-links" href="about.html">About Us</a>
+              <a class="footer-links" href="faq.html">FAQ</a>
             </div>
-            <p>Copyright © lorem ipsum</p>
+            <div class="col-lg-3 col-md-3 contact-section">
+            <h2>Contacts</h2>
+            <a href="#"> <i class="fab fa-twitter footer-icon"></i> </a>
+            <a href="#"> <i class="fab fa-facebook-f footer-icon"></i> </a>
+            <a href="#"> <i class="fab fa-instagram footer-icon"></i> </a>
+            <a href="#"> <i class="fas fa-envelope footer-icon"></i> </a>
+          </div>
+          </div>
+          </div>
           </section>
 </body>
 </html>

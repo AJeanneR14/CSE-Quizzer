@@ -1,0 +1,337 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Old Standard TT', serif;
+}
+h1,h2{
+    font-size: 1.5rem;
+}
+hr{
+    border: dotted;
+    border-bottom: none;
+    border-width: 10px;
+    width: 7%;
+}
+.container-fluid{
+    padding: 3% 8%;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+.nav-link:hover{
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+#header-container{
+    background-color: #5eaaa8;
+    padding: 3% 0;
+}
+
+/* Landing Section */
+#main-container{ 
+    background-color: #f7f3e9;
+    text-align: center;
+    padding: 8% 5%;
+}
+.title-text{
+    padding-bottom: 3%;
+}
+.main-text{
+    text-align: justify;
+    line-height: 2.5;
+}
+.banner-img{
+    width: 90%;
+    margin: 0% 5% 5%;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+#footer-container{
+    text-align: left;
+    background-color: #5eaaa8;
+    padding: 3% 0;
+}
+.footer-links{
+    font-size: 1rem;
+    display: block;
+    padding: 1% 0;
+    color: rgba(255,255,255,.7);
+}
+.footer-links:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,.9);
+}
+
+/* CTA Section */
+.CTA-section{
+    padding-bottom: 1em;
+}
+
+/* Help Section */
+.help-section{
+    padding-bottom: 1em;
+}
+
+/* Contact Section */
+.contact-section a{
+    text-decoration: none;
+}
+.footer-icon{
+    font-size: 1.25rem;
+    padding-right: 7%;
+    color: rgba(255,255,255,.7);
+}
+.footer-icon:hover{
+    color: rgba(255,255,255,.9);
+}
+
+/* About Section */
+.help-container{
+    background-color: #f7f3e9;
+    text-align: center;
+    line-height: 2.5;
+    padding: 8% 0%;
+}
+.about-section{
+    padding-bottom: 2em;
+}
+.about-text{
+    text-align: justify;
+}
+.custom-btn{
+    background-color: #5eaaa8;
+    border-color: #5eaaa8;
+    color: rgba(255,255,255,.7);
+}
+
+/* FAQ Section */
+.faq-text{
+    margin: 2rem 0;
+    padding: 1em;
+    border: 1px solid #050505;
+    border-radius: 10px;
+}
+.faq-text p{
+    padding-top: 0.5rem;
+    text-align: justify;
+}
+
+/* Questionnaire Section */
+#questionnaire-container{
+    background-color: #f7f3e9;
+    line-height: 2.5;
+    padding: 8% 0%;
+}
+.header, .btn-exam{
+    text-align: center;
+}
+.btn-exam{
+    margin-top: 3rem;
+}
+.coverage-title{
+    padding: 2em 0 0;
+}
+
+/* Forms Section */
+.forms-container{
+    background-color: #f7f3e9;
+    line-height: 2;
+    padding: 8% 0%;
+}
+.forms{
+    margin: 1rem 0;
+}
+.forms input{
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Quizzer Section */
+.prof-level-container{
+    background-color: #f7f3e9;
+    padding: 8% 0%;
+    text-align: center;
+}
+.prof-level-container a{
+    text-decoration: none;
+}
+.quiz-header{ 
+    background-color: #5eaaa8;
+    padding: 1em;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #050505;
+}
+#question{
+    text-align: center;
+    background-color: #f9f7f7;
+    border: 1px solid #050505;
+    border-radius: 100px;
+    padding: 2em;
+}
+.quizzer-btn{
+    padding: 0.5em 1em;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 100px;
+    background-color: rgba(255,255,255,.7);
+    cursor: pointer;
+}
+.quizzer-btn:hover{
+    background-color: #355c7d;
+}
+.quizzer-btn:focus{
+    outline: none;
+}
+#btnOp{
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+.score-header{
+    margin-bottom: 8%;
+    font-size: 2rem;
+}
+
+/* Reviewer Section */
+.reviewer-container{
+    text-align: center;
+    background-color: #f7f3e9;
+    padding: 8% 0%;
+}
+.reviewer-img{
+    width: 80%;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+}
+.reviewer-header{
+    padding-bottom: 0.5em;
+}
+
+/* Under Maintenance Page */
+#error-404-container{
+    text-align: center;
+    background-color: #f7f3e9;
+    line-height: 3;
+    padding: 8% 0%;
+}
+
+/* Mobile Design */
+@media (min-width:641px){
+    h1,h2{
+        font-size: 1.75rem;
+    }
+
+    .banner-img{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .help-container{
+        padding: 8% 5%;
+    }
+    .reviewer-img{
+        width: 60%;
+        margin: 1rem 0;
+    }
+    .reviewer-header{
+        padding-bottom: 1em;
+    }
+    .forms-container{
+        line-height: 3;
+        padding: 8% 4%;
+    }
+    .prof-level-container{
+        padding: 8% 5%;
+    }
+    .quizzer-btn{
+        padding: 1em 1em;
+        margin-bottom: 1.5rem;
+        width: 80%;
+    }
+    #btnOp{
+        font-size: 2rem;
+    }
+    .score-header{
+        font-size: 2.5rem;
+    }
+}
+
+/* Ipad Design */
+@media (min-width:961px){
+    h1,h2{
+        font-size: 2rem;
+    }
+    
+    .banner-img{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .help-container{
+        line-height: 3;
+        padding: 8% 16%;
+    }
+    #questionnaire-container{
+        font-size: 1rem;   
+        padding: 8% 8%;
+    }
+    #error-404-container{
+        font-size: 1rem;   
+        padding: 8% 8%;
+    }
+    .reviewer-img{
+        width: 70%;
+    }
+    .forms-container{
+        padding: 8% 12%;
+    }
+    .prof-level-container{
+        padding: 8% 12%;
+    }
+    .quizzer-btn{
+        margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+        width: 80%;
+    }
+    .score-header{
+        font-size: 3rem;
+    }
+    #btnOp{
+        font-size: 2.5rem;
+    }
+}
+
+/* Laptop Design */
+@media (min-width:1025px){
+    h1,h2{
+        font-size: 2.5rem;
+    }
+    .forms-container{
+        padding: 8% 16%;
+    }
+}
+
+/* Desktop Design */
+@media (min-width:1281px){
+    h1,h2{
+        font-size: 3rem;
+    }
+
+    .help-container{
+        padding: 8% 19%;
+    }
+    #questionnaire-container{
+        padding: 8% 12%;
+    }
+    .prof-level-container{
+        padding: 8% 12%;
+    }
+    #error-404-container{
+        padding: 8% 19%;
+    }
+}
