@@ -260,6 +260,8 @@ hr{
         font-size: 2.5rem;
     }
 }
+
+/* Ipad Design 1 */
 @media (min-width:768px){
     .help-container{
         line-height: 3;
@@ -274,7 +276,7 @@ hr{
         padding: 8% 10%;
     }
     .prof-level-container{
-        padding: 12% 8% 30%;
+        padding: 12% 8% 35%;
     }
     #btnOp{
         margin-right: 1.75rem;
@@ -285,7 +287,7 @@ hr{
         font-size: 3.5rem;
     }
 }
-/* Ipad Design */
+/* Ipad Design 2 */
 @media (min-width:961px){
     h1,h2{
         font-size: 2rem;
