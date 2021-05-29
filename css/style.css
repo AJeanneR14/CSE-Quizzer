@@ -260,7 +260,32 @@ hr{
         font-size: 2.5rem;
     }
 }
-
+@media (min-width:768px){
+    .help-container{
+        line-height: 3;
+        padding: 8% 16%;
+    }
+    .message-section{
+        padding-bottom: 2em;
+    }
+    #error-404-container{
+        font-size: 1.25rem;
+        line-height: 3;
+        padding: 8% 10%;
+    }
+    .prof-level-container{
+        padding: 12% 0% 30%;
+        line-height: 3;
+    }
+    #btnOp{
+        margin-right: 1.75rem;
+        font-size: 3rem;
+    }
+    .score-header{
+        margin-bottom: 8%;
+        font-size: 3.5rem;
+    }
+}
 /* Ipad Design */
 @media (min-width:961px){
     h1,h2{
